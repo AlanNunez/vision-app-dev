@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6312483C22125B750007244D /* SqueezeNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 6312483B22125B740007244D /* SqueezeNet.mlmodel */; };
 		E9E9408F2211B1E8002368D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E9408E2211B1E8002368D8 /* AppDelegate.swift */; };
 		E9E940912211B1E8002368D8 /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E940902211B1E8002368D8 /* CameraVC.swift */; };
 		E9E940942211B1E8002368D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9E940922211B1E8002368D8 /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6312483B22125B740007244D /* SqueezeNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SqueezeNet.mlmodel; sourceTree = "<group>"; };
 		E9E9408B2211B1E8002368D8 /* vision-app-dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "vision-app-dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9E9408E2211B1E8002368D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9E940902211B1E8002368D8 /* CameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 		E9E940A22211B239002368D8 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				6312483B22125B740007244D /* SqueezeNet.mlmodel */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -169,6 +172,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9E940A62211C7B9002368D8 /* RoundedShadowBtn.swift in Sources */,
+				6312483C22125B750007244D /* SqueezeNet.mlmodel in Sources */,
 				E9E940912211B1E8002368D8 /* CameraVC.swift in Sources */,
 				E9E9408F2211B1E8002368D8 /* AppDelegate.swift in Sources */,
 				E9E940A42211C508002368D8 /* RoundedShadowView.swift in Sources */,
