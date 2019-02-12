@@ -58,9 +58,9 @@ class CameraVC: UIViewController {
             cameraOutput = AVCapturePhotoOutput()
             
             if captureSession.canAddOutput(cameraOutput) {
-                captureSession.addOutput(cameraOutput)
+                captureSession.addOutput(cameraOutput!)
                 
-                previewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
+                previewLayer = AVCaptureVideoPreviewLayer(session: captureSession!)
                 previewLayer.videoGravity = .resizeAspect
                 previewLayer.connection?.videoOrientation = .portrait
                 
@@ -84,8 +84,10 @@ class CameraVC: UIViewController {
         self.spinner.startAnimating()
         
         let settings = AVCapturePhotoSettings()
-        settings.previewPhotoFormat = settings.embeddedThumbnailPhotoFormat
-        
+        let previewPixelType = settings.availablePreviewPhotoPixelFormatTypes.first!
+        let previewFormat = [kCVPixelBufferPixelFormatTypeKey as String: previewPixelType,
+                             kCVPixelBufferWidthKey as String: 160, kCVPixelBufferHeightKey as String: 160]
+        settings.previewPhotoFormat = previewFormat
         cameraOutput.capturePhoto(with: settings, delegate: self)
         
         if flashControlState == .off {
@@ -157,7 +159,7 @@ extension CameraVC: AVCapturePhotoCaptureDelegate {
 
 extension CameraVC: AVSpeechSynthesizerDelegate {
     func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, didFinish utterance: AVSpeechUtterance) {
-        self.cameraView.isUserInteractionEnabled = false
+        self.cameraView.isUserInteractionEnabled = true
         self.spinner.isHidden = true
         self.spinner.stopAnimating()
     }

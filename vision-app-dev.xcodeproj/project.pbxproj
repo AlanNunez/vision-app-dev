@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6312483C22125B750007244D /* SqueezeNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 6312483B22125B740007244D /* SqueezeNet.mlmodel */; };
+		E93B3B2C221348C100429933 /* Screen Shot 2018-12-17 at 3.58.32 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = E93B3B2B221348C100429933 /* Screen Shot 2018-12-17 at 3.58.32 PM.png */; };
 		E9E9408F2211B1E8002368D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E9408E2211B1E8002368D8 /* AppDelegate.swift */; };
 		E9E940912211B1E8002368D8 /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E940902211B1E8002368D8 /* CameraVC.swift */; };
 		E9E940942211B1E8002368D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9E940922211B1E8002368D8 /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		6312483B22125B740007244D /* SqueezeNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SqueezeNet.mlmodel; sourceTree = "<group>"; };
+		E93B3B2B221348C100429933 /* Screen Shot 2018-12-17 at 3.58.32 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2018-12-17 at 3.58.32 PM.png"; sourceTree = "<group>"; };
 		E9E9408B2211B1E8002368D8 /* vision-app-dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "vision-app-dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9E9408E2211B1E8002368D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9E940902211B1E8002368D8 /* CameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 				E9E9408E2211B1E8002368D8 /* AppDelegate.swift */,
 				E9E940922211B1E8002368D8 /* Main.storyboard */,
 				E9E940952211B1F0002368D8 /* Assets.xcassets */,
+				E93B3B2B221348C100429933 /* Screen Shot 2018-12-17 at 3.58.32 PM.png */,
 				E9E940972211B1F0002368D8 /* LaunchScreen.storyboard */,
 				E9E9409A2211B1F0002368D8 /* Info.plist */,
 			);
@@ -158,6 +161,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E93B3B2C221348C100429933 /* Screen Shot 2018-12-17 at 3.58.32 PM.png in Resources */,
 				E9E940992211B1F0002368D8 /* LaunchScreen.storyboard in Resources */,
 				E9E940962211B1F0002368D8 /* Assets.xcassets in Resources */,
 				E9E940942211B1E8002368D8 /* Main.storyboard in Resources */,
@@ -323,7 +327,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 553Q284FQL;
 				INFOPLIST_FILE = "vision-app-dev/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -340,7 +346,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 553Q284FQL;
 				INFOPLIST_FILE = "vision-app-dev/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
